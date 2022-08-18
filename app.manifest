@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "2.0.0", 
+  "info": {
+    "title": "SSL and TLS Certificate Checker", 
+    "id": {
+      "group": null, 
+      "name": "ssl_checker", 
+      "version": "4.1.0"
+    }, 
+    "author": [
+      {
+        "name": "Splunkable LLC", 
+        "email": "support@splunkable.com",
+        "company": null
+      }
+    ],
+    "releaseDate": null,
+    "description": "This application indexes the expiration date of certificates specified in ssl.conf using Splunk's built in openssl binary.  Also has automated mode where it finds certs in known Splunk configurations and monitors them.", 
+    "classification": {
+      "intendedAudience": "IT",
+      "categories": ["IT Operations"],
+      "developmentStatus": "Production/Stable"
+    }, 
+    "commonInformationModels": null, 
+    "license": {
+      "name": "Apache 2 Public License Agreement",
+      "text": "license-eula.txt",
+      "uri": "https://www.apache.org/licenses/LICENSE-2.0"
+    }, 
+    "releaseNotes": {
+      "name": "README", 
+      "text": "README.md",
+      "uri": "https://splunkbase.splunk.com/app/3172/#/details"
+    }
+  }, 
+  "dependencies": {}
+  },
+  "tasks": ["script://./bin/ssl_checker2.py","script://./bin/ssl_checker3.py"],
+  "supportedDeployments": ["_standalone", "_distributed", "_search_head_clustering"],
+  "targetWorkloads": ["_search_heads"]
+}

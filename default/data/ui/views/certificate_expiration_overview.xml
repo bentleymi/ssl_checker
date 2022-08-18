@@ -1,0 +1,26 @@
+<dashboard version="1.1">
+  <label>Certificate Expiration Overview</label>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>sourcetype=ssl_certs 
+| eval expireDate=strptime(expires,"%b %d %H:%M:%S %Y %Z") 
+| eval daysUntilExpiration=round((expireDate-now())/86400,0)
+| stats latest(expires) as "Expiration Date" latest(daysUntilExpiration) as "Days Until Expiration" by host cert
+| sort 0 "Days Until Expiration"
+| rename host as "Hostname" cert as "Certificate"</query>
+          <earliest>0</earliest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>
