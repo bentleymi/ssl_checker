@@ -16,23 +16,26 @@ Copyright 2022 Splunkable LLC
 # ssl_checker
 Packaged and distributed for public consumption here -> https://splunkbase.splunk.com/app/3172/
 
+THIS APP WORKS ON SPLUNK CLOUD, ENTERPRISE AND LIGHT - BUT NOT UNIVERSAL/LIGHT FORWARDERS
 
-THIS APP WORKS ON SPLUNK ENTERPRISE AND LIGHT - BUT NOT UNIVERSAL/LIGHT FORWARDERS
-
-Doesnt work on Universal Forwarders / Light Forwarders
+Does not work on Universal Forwarders / Light Forwarders
 Requires Splunk's built in Python 3 and OpenSSL binaries / libraries
 Tested on Generic AWS Linux
-Installation Instructions
+
+#Installation Instructions
 
 1st - Install the app, and restart Splunk
 2nd - Setup your own Splunk searches, alerts, dashboards (see index=main by default)
 
-Troubleshooting:
+#Troubleshooting:
 
 Be sure the python scripts in /bin are executable ("chmod +x /path/to/ssl_checker/bin/.py")
 Be sure to restart Splunk after configuration (Enables scripted inputs)
 Check for logged errors ("index=_internal log_level=err OR log_level=warn ssl_checker")
 Contact the author via contact on splunkbase or by tagging @jkat54 on answers.splunk.com
+
+#Bug Reporting & Code Contributions:
+https://github.com/bentleymi/ssl_checker
 
 Change Log v4.1.0:
 -The cloud compatible version:
