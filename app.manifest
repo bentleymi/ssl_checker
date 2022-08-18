@@ -24,7 +24,7 @@
     "commonInformationModels": null, 
     "license": {
       "name": "Apache 2 Public License Agreement",
-      "text": "license-eula.txt",
+      "text": "LICENSE.txt",
       "uri": "https://www.apache.org/licenses/LICENSE-2.0"
     }, 
     "releaseNotes": {
@@ -35,7 +35,7 @@
   }, 
   "dependencies": {}
   },
-  "tasks": ["script://./bin/ssl_checker2.py","script://./bin/ssl_checker3.py"],
+  "tasks": ["script://$SPLUNK_HOME/etc/apps/ssl_checker/bin/ssl_checker3.py"],
   "supportedDeployments": ["_standalone", "_distributed", "_search_head_clustering"],
   "targetWorkloads": ["_search_heads"]
 }
