@@ -16,7 +16,7 @@ Copyright 2022 Splunkable LLC
 #ssl_checker
 Packaged and distributed for public consumption here -> https://splunkbase.splunk.com/app/3172/
 
-THIS APP WORKS ON SPLUNK CLOUD, ENTERPRISE AND LIGHT - BUT NOT UNIVERSAL/LIGHT FORWARDERS
+THIS APP WORKS ON SPLUNK CLOUD, and ENTERPRISE - BUT NOT UNIVERSAL/LIGHT FORWARDERS
 
 Does not work on Universal Forwarders / Light Forwarders
 Requires Splunk's built in Python 3 and OpenSSL binaries / libraries
