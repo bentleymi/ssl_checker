@@ -24,7 +24,7 @@
     "commonInformationModels": null, 
     "license": {
       "name": "Apache 2 Public License Agreement",
-      "text": "LICENSE.txt",
+      "text": "LICENSE",
       "uri": "https://www.apache.org/licenses/LICENSE-2.0"
     }, 
     "releaseNotes": {
