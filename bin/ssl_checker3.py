@@ -91,7 +91,7 @@ for configFile in foundConfigFiles:
 for sslPath in certsToCheck:
     if sslPath:
         p1 = subprocess.Popen([splunkBinPath,"cmd","openssl","x509","-enddate","-noout","-in",sslPath], stdout=subprocess.PIPE)
-        dates = str(p1.communicate()[0])
+        dates = p1.communicate()[0].decode()
         p1.stdout.close()
         message = 'cert="' + sslPath + '" ' + dates.replace('=','="').replace('\n','"|').replace('|',' ')
         message = message.replace("notAfter","expires")
