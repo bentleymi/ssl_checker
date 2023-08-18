@@ -1,5 +1,5 @@
 
-Copyright 2022 Splunkable LLC
+Copyright 2016 Splunkable LLC
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -34,6 +34,14 @@ Contact the author via contact on splunkbase or by tagging @jkat54 on answers.sp
 
 #Bug Reporting & Code Contributions:
 https://github.com/bentleymi/ssl_checker
+
+#Change Log v4.2.0:
+-Removed setup page from nav
+-Disabled visibility
+
+#Change Log v4.1.1:
+-Removed future import of print_statement from ssl_checker3.py
+-Enabled visibility
 
 #Change Log v4.1.0:
 -Updated example dashboard to address jQuery vuln
