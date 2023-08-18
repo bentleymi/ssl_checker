@@ -35,6 +35,9 @@ Contact the author via contact on splunkbase or by tagging @jkat54 on answers.sp
 #Bug Reporting & Code Contributions:
 https://github.com/bentleymi/ssl_checker
 
+#Change Log v4.1.1:
+-removed future print_statement import
+
 #Change Log v4.1.0:
 -Updated example dashboard to address jQuery vuln
 -Changed to fully automated, just install and profit now
