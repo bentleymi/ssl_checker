@@ -38,6 +38,7 @@ https://github.com/bentleymi/ssl_checker
 #Change Log v4.2.0:
 -Removed setup page from nav
 -Disabled visibility
+-Added new ssl keys
 
 #Change Log v4.1.1:
 -Removed future import of print_statement from ssl_checker3.py
