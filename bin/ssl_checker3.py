@@ -26,11 +26,11 @@ splunkBinPath = os.path.join(splunkBinDir,"splunk")
 
 sslConfigFiles = {}
 sslConfigFiles['deploymentclient.conf'] = ['caCertFile']
-sslConfigFiles['inputs.conf'] = ['serverCert','caCertFile','caPath','sslRootCAPath','rootCA','sslKeysfile']
-sslConfigFiles['outputs.conf'] = ['clientCert','sslCertPath','sslRootCAPath']
-sslConfigFiles['server.conf'] = ['serverCert','caCertFile','caPath','sslRootCAPath','rootCA','sslKeysfile']
-sslConfigFiles['web.conf'] = ['serverCert','caCertPath']
-uniqueSSLConfigKeys = ['caCertFile','caPath','clientCert','rootCA','serverCert','sslKeysfile','sslRootCAPath']
+sslConfigFiles['inputs.conf'] = ['caCertFile','caPath','rootCA','serverCert','sslKeysfile','sslRootCAPath','remote_queue.sqs_smartbus.large_message_store.sslRootCAPath']
+sslConfigFiles['outputs.conf'] = ['clientCert','sslCertPath','sslRootCAPath','remote_queue.sqs_smartbus.large_message_store.sslRootCAPath','remote.s3.sslRootCAPath']
+sslConfigFiles['server.conf'] = ['caCertFile','caPath','rootCA','serverCert','sslKeysfile','sslRootCAPath','remote.s3.sslRootCAPath']
+sslConfigFiles['web.conf'] = ['caCertPath','serverCert','sslRootCAPath']
+uniqueSSLConfigKeys = ['caCertFile','caPath','clientCert','rootCA','serverCert','sslCertPath','sslKeysfile','sslRootCAPath','remote_queue.sqs_smartbus.large_message_store.sslRootCAPath','remote.s3.sslRootCAPath']
 
 def find(name, path):
     for root, dirs, files in os.walk(path):
